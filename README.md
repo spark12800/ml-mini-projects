@@ -10,6 +10,7 @@ Each folder contains a Jupyter notebook and a brief README describing the object
 ### 1️⃣ CNN from Scratch & Dropout Placement Study  
 **Domain:** Vision  
 **Summary:** Tests how dropout placement (conv vs pooling vs fc layers) affects overfitting in a simple CNN. Built different CNNs architectures from scratch, inspired by VGGNet, ResNet, and Inception V3. 
+
 📁 `CNN from Scratch & Dropout Placement Study/`
 
 ---
