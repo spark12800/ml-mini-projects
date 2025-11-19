@@ -64,7 +64,7 @@ This suggests that **stochastic pooling** helps prevent dominance of strong loca
 
 ## 4. Improved Architecture (Deep CNN)
 
-To address the limitations of the baseline model, a VGG-inspired deeper architecture was built:
+To address the limitations of the baseline model, a **VGG**-inspired deeper architecture was built:
 
 - Eight Conv layers (3×3)
 - Three MaxPool layers
