@@ -1,6 +1,7 @@
 # Mel-Spectrogram Music Genre Classifier
 
 **Goal:**  
+
 Classify music genres using a hybrid CNN–LSTM network optimised for Mel-spectrogram inputs.
 
 ---
@@ -29,7 +30,7 @@ This project focuses heavily on **systematic optimisation** of the model’s reg
 - **He normal initialisation** for variance-stable convolutional layers  
 - **Leaky ReLU (α = 0.3)** to avoid dead activations and mitigate vanishing gradients  
 
-### 🔹 Learning Rate Engineering
+### 🔹 Learning Rate 
 A **manually designed multi-stage learning rate schedule** was implemented to balance fast initial convergence with stable late-stage optimisation:
 
 - **Epochs 1–5:** linear warm-up from 5e−5  
@@ -39,7 +40,7 @@ A **manually designed multi-stage learning rate schedule** was implemented to ba
 
 This schedule significantly improved convergence and prevented overshooting during early optimisation.
 
-### 🔹 Data Augmentation Analysis
+### 🔹 Data Augmentation 
 Augmentations (noise, time-shift) were initially applied to enforce i.i.d. batches, but **empirically decreased validation accuracy** due to correlated song segments.  
 Final model therefore trains **without augmentation**, confirming that optimisation choices should follow data dynamics, not assumptions.
 
@@ -55,5 +56,6 @@ Final model therefore trains **without augmentation**, confirming that optimisat
 ---
 
 **Tools:** Tensorflow 
+
 **Notebook:** `mel_spectrogram_classifier.ipynb`
 
