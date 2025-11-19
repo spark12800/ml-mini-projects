@@ -18,6 +18,7 @@ Each folder contains a Jupyter notebook and a brief README describing the object
 ### 2️⃣ Mel-Spectrogram Music Genre Classifier  
 **Domain:** Audio  
 **Summary:** Classifies music genres using Mel-spectrograms with a CNN + LSTM architecture.  
+
 📁 `Mel-Spectrogram Music Genre Classifier/`
 
 ---
@@ -25,6 +26,7 @@ Each folder contains a Jupyter notebook and a brief README describing the object
 ### 3️⃣ New Topic Embedding Using Pretrained Transformer  
 **Domain:** NLP  
 **Summary:** Uses and compared MiniLM, BERT, and RoBERTa sentence embeddings to classify AG News headlines.  
+
 📁 `New Topic Embedding Using Pretrained Transformer/`
 
 ---
@@ -32,5 +34,6 @@ Each folder contains a Jupyter notebook and a brief README describing the object
 ### 4️⃣ Permutation-Equivariant Function Implementation  
 **Domain:** Theory / Equivariance  
 **Summary:** Implements a toy permutation-equivariant function using conv-based operations and validates equivariance.  
+
 📁 `Permutation-Equivariant Function Implementation/`
 
