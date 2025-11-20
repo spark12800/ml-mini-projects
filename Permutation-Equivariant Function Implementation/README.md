@@ -16,9 +16,7 @@ The goal is to study how architectural depth and kernel width influence equivari
 
 ### **1. Row-wise Equivariant Term**
 ```math
-\[
 \sum_{u=1}^{d} a_{u,v} x_{j,u} + c_v
-\]
 ```
 - Implemented using **Conv1D(kernel_size=1, bias=True)**  
 - Each row is processed independently → preserves permutation equivariance  
@@ -27,9 +25,7 @@ The goal is to study how architectural depth and kernel width influence equivari
 
 ### **2. Permutation-Invariant Global Term**
 ```math
-\[
 \sum_{u=1}^{d} b_{u,v} \left( \frac{1}{m} \sum_{l=1}^{m} x_{l,u} \right)
-\]
 ```
 - Implemented via **GlobalAveragePooling1D**  
 - The mean across rows is invariant to row order  
