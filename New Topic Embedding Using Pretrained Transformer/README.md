@@ -1,7 +1,7 @@
 # News Topic Clustering with Transformer Embeddings
 
 **Goal:**  
-Evaluate how well pretrained Transformer embeddings separate news topics in the **AG News** dataset.
+Evaluate how well pretrained Transformer models separate news topics in the **AG News** dataset.
 
 ---
 
@@ -52,9 +52,15 @@ This project uses the **AG News** dataset from the *HuggingFace Datasets* librar
 
 ## Key Findings
 
-- **MiniLM-L6-v2** produced the most separable topic clusters and strongest probe performance.  
-- **RoBERTa-base** competitive but slightly less linearly separable.  
-- **BERT-base** showed weaker clustering in both probes and t-SNE.  
+- **RoBERTa-base** achieved the strongest probe performance (Test Acc ≈ 0.914), producing the most accurate topic separation.  
+- **BERT-base** performed slightly below RoBERTa but remained competitive (Test Acc ≈ 0.912).  
+- **MiniLM**, despite its smaller embedding size, showed the weakest probe accuracy (≈ 0.896), confirming the trade-off between compactness and linear separability.
+
+---
+
+## Result
+
+<img src="dimentionality_reduction.png" width="90%">
 
 ---
 
