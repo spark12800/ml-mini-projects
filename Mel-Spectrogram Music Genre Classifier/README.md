@@ -38,9 +38,8 @@ A **manually designed multi-stage learning rate schedule** was implemented to ba
 - **Epochs 42–46:** reduced to 2e−4 for stabilisation  
 - **Epochs 47–50:** final annealing to 5e−5  
 
-<p align="center">
-  <img src="image_mel_spectrogram/learning_rate.png" width="70%">
-</p>
+<img src="image_mel_spectrogram/learning_rate.png" width="80%">
+
 
 This schedule significantly improved convergence and prevented overshooting during early optimisation.
 
@@ -59,9 +58,7 @@ Final model therefore trains **without augmentation**, confirming that optimisat
 
 ---
 ## Result
-<p align="center">
-  <img src="image_mel_spectrogram/performance_graph.png" width="70%">
-</p>
+<img src="image_mel_spectrogram/performance_graph.png" width="80%">
 
 Achieved 93% in validation set.
 
