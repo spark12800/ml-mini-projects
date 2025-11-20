@@ -38,6 +38,8 @@ A **manually designed multi-stage learning rate schedule** was implemented to ba
 - **Epochs 42–46:** reduced to 2e−4 for stabilisation  
 - **Epochs 47–50:** final annealing to 5e−5  
 
+![Learning Rate Schedule](image_mel_spectrogram/learning_rate.png)
+
 This schedule significantly improved convergence and prevented overshooting during early optimisation.
 
 ### 🔹 Data Augmentation 
@@ -54,8 +56,12 @@ Final model therefore trains **without augmentation**, confirming that optimisat
 - Empirical evaluation showed augmentation was counterproductive given dataset structure.  
 
 ---
+## Result
+![Performance Graph](image_mel_spectrogram/performance_graph.png)
 
-**Tools:** Tensorflow 
+Achieved 93% in validation set.
+
+**Tools:** Tensorflow, KerasTuner 
 
 **Notebook:** `mel_spectrogram_classifier.ipynb`
 
