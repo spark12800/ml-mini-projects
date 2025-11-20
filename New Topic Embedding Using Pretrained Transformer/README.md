@@ -60,9 +60,22 @@ This project uses the **AG News** dataset from the *HuggingFace Datasets* librar
 
 ## Result
 
-<img src="image_news_topic_clustering/dimentionality_reduction.png" width="90%">
+### Probe Performance Summary
+
+| Model         | Best Probe | Test Acc | Test F1 (Macro) | Emb Dim | Train N | Test N |
+|---------------|------------|----------|------------------|---------|---------|--------|
+| **RoBERTa-base** | LinearSVM | **0.9141** | **0.9140** | 768 | 120,000 | 7,600 |
+| **BERT-base**    | LinearSVM | 0.9120 | 0.9118 | 768 | 120,000 | 7,600 |
+| **MiniLM**        | LinearSVM | 0.8958 | 0.8956 | 384 | 120,000 | 7,600 |
 
 ---
+
+### Embedding Space Visualisation
+
+<img src="image_news_topic_clustering/dimentionality_reduction.png" width="80%">
+
+---
+
 
 **Tools:** HuggingFace Transformers, SentenceTransformers, scikit-learn  
 **Notebook:** `News_Topic_Clustering.ipynb`
