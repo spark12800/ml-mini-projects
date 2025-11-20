@@ -62,6 +62,8 @@ Final model therefore trains **without augmentation**, confirming that optimisat
 
 Achieved 93% in validation set.
 
+---
+
 **Tools:** Tensorflow, KerasTuner 
 
 **Notebook:** `mel_spectrogram_classifier.ipynb`
