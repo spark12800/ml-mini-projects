@@ -49,15 +49,6 @@ This project uses the **AG News** dataset from the *HuggingFace Datasets* librar
 - Per-topic colour-coded clusters
 
 ---
-
-## Key Findings
-
-- **RoBERTa-base** achieved the strongest probe performance (Test Acc ≈ 0.914), producing the most accurate topic separation.  
-- **BERT-base** performed slightly below RoBERTa but remained competitive (Test Acc ≈ 0.912).  
-- **MiniLM**, despite its smaller embedding size, showed the weakest probe accuracy (≈ 0.896), confirming the trade-off between compactness and linear separability.
-
----
-
 ## Result
 
 ### Probe Performance Summary
@@ -68,11 +59,16 @@ This project uses the **AG News** dataset from the *HuggingFace Datasets* librar
 | **BERT-base**    | LinearSVM | 0.9120 | 0.9118 | 768 | 120,000 | 7,600 |
 | **MiniLM**        | LinearSVM | 0.8958 | 0.8956 | 384 | 120,000 | 7,600 |
 
+
+- **RoBERTa-base** achieved the strongest probe performance (Test Acc ≈ 0.914), producing the most accurate topic separation.  
+- **BERT-base** performed slightly below RoBERTa but remained competitive (Test Acc ≈ 0.912).  
+- **MiniLM**, despite its smaller embedding size, showed the weakest probe accuracy (≈ 0.896), confirming the trade-off between compactness and linear separability.
+
 ---
 
 ### Embedding Space Visualisation
 
-<img src="image_news_topic_clustering/dimentionality_reduction.png" width="80%">
+<img src="image_news_topic_clustering/dimentionality_reduction.png" width="70%">
 
 ---
 
