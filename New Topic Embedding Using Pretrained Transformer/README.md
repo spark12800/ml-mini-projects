@@ -60,7 +60,7 @@ This project uses the **AG News** dataset from the *HuggingFace Datasets* librar
 
 ## Result
 
-<img src="dimentionality_reduction.png" width="90%">
+<img src="image_news_topic_clustering/dimentionality_reduction.png" width="90%">
 
 ---
 
