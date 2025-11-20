@@ -43,6 +43,8 @@ Architectures are denoted as **L:x (layers) / w:y (kernels)**.
 
 ### Key empirical findings:
 
+ <img src="image_permutation_equivariant/result.png" width="80%">
+
 - **Deeper and wider models reduce loss more effectively.**  
   L:3 w:200 consistently gives the strongest optimisation.
 
