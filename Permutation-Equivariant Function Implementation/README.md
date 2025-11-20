@@ -2,11 +2,7 @@
 
 This project implements a **permutation-equivariant function** using a combination of **Conv1D layers** and **Global Average Pooling**, reproducing the two-term formulation:
 
-```math
-\sum_{u=1}^{d} a_{u,v} x_{j,u} + c_v
-\quad+\quad
-\sum_{u=1}^{d} b_{u,v} \left( \frac{1}{m} \sum_{l=1}^{m} x_{l,u} \right)
-```
+<img src="image_permutation_equivariant/equation.png" width="80%">
 
 The goal is to study how architectural depth and kernel width influence equivariance, optimisation behaviour, and generalisation.
 
